@@ -33,7 +33,7 @@ class Rot13ConverterTest extends TestCase
     {
         $converter = new Rot13Converter();
         $input = '123!@#$';
-        $expectedOutput = '123!@#$'; // Digits and symbols remain unchanged
+        $expectedOutput = '123!@#$';
 
         $output = $converter->convert($input);
 

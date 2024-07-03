@@ -20,8 +20,7 @@ class RandomStringGeneratorTest extends TestCase
         $generator = new RandomStringGenerator(20);
         $randomString = $generator->generate();
 
-        // Check that each character in the generated string is within the expected range
-        $this->assertRegExp('/^[a-zA-Z0-9]{20}$/', $randomString);
+        $this->assertMatchesRegularExpression('/^[a-zA-Z0-9]{20}$/', $randomString);
     }
 
     public function testGenerateEmptyString()

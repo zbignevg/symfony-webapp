@@ -29,7 +29,6 @@ class GeneratorsCollectionTest extends TestCase
 
         $this->assertCount(4, $generators);
 
-        // Assert that the generators are stored in the same order they were added
         $this->assertInstanceOf(RandomStringGenerator::class, $generators[0]);
         $this->assertInstanceOf(RandomArrayGenerator::class, $generators[1]);
         $this->assertInstanceOf(StringPatternConverter::class, $generators[2]);
