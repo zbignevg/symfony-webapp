@@ -1,5 +1,5 @@
 <?php
-// src/Service/Converter/StringPatternConverter.php
+
 namespace App\Service\Converter;
 
 class StringPatternConverter

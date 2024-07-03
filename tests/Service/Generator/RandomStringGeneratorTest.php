@@ -1,5 +1,4 @@
 <?php
-// tests/Service/Generator/RandomStringGeneratorTest.php
 
 namespace App\Tests\Service\Generator;
 

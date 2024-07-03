@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<ruleset name="MyProject">
+    <description>Custom coding standard rules for MyProject</description>
+
+    <!-- Specify directories to check -->
+    <file>src</file>
+    <file>tests</file>
+
+    <!-- Set PHP file extensions -->
+    <arg name="extensions" value="php"/>
+
+    <!-- Use PSR-12 coding standard -->
+    <rule ref="PSR12"/>
+
+    <!-- Additional rules can be added here -->
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="120"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="false"/>
+        </properties>
+    </rule>
+
+    <!-- Exclude vendor directory -->
+    <exclude-pattern>/vendor/*</exclude-pattern>
+</ruleset>

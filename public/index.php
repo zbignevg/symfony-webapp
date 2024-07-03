@@ -1,19 +1,10 @@
 <?php
-//
-//use App\Kernel;
-//
-//require_once dirname(__DIR__).'/vendor/autoload_runtime.php';
-//
-//return function (array $context) {
-//    return new Kernel($context['APP_ENV'], (bool) $context['APP_DEBUG']);
-//};
 
-// public/index.php
-use App\Service\Generator\RandomStringGenerator;
-use App\Service\Generator\RandomArrayGenerator;
-use App\Service\GeneratorsCollection;
-use App\Service\Converter\StringPatternConverter;
 use App\Service\Converter\Rot13Converter;
+use App\Service\Converter\StringPatternConverter;
+use App\Service\Generator\RandomArrayGenerator;
+use App\Service\Generator\RandomStringGenerator;
+use App\Service\GeneratorsCollection;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
 

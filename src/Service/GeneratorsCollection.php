@@ -1,5 +1,5 @@
 <?php
-// src/Service/Generator/GeneratorsCollection.php
+
 namespace App\Service;
 
 class GeneratorsCollection

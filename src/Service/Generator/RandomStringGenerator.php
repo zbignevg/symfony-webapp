@@ -1,5 +1,5 @@
 <?php
-// src/Service/Generator/RandomStringGenerator.php
+
 namespace App\Service\Generator;
 
 class RandomStringGenerator

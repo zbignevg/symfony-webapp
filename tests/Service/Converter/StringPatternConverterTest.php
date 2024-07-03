@@ -1,5 +1,4 @@
 <?php
-// tests/Service/StringPatternConverterTest.php
 
 namespace App\Tests\Service;
 

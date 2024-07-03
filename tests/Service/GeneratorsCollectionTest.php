@@ -1,13 +1,12 @@
 <?php
-// tests/Service/GeneratorsCollectionTest.php
 
 namespace App\Tests\Service;
 
-use App\Service\GeneratorsCollection;
+use App\Service\Converter\Rot13Converter;
+use App\Service\Converter\StringPatternConverter;
 use App\Service\Generator\RandomArrayGenerator;
 use App\Service\Generator\RandomStringGenerator;
-use App\Service\Converter\StringPatternConverter;
-use App\Service\Converter\Rot13Converter;
+use App\Service\GeneratorsCollection;
 use PHPUnit\Framework\TestCase;
 
 class GeneratorsCollectionTest extends TestCase
