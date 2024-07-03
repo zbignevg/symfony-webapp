@@ -19,7 +19,7 @@ class RandomArrayGeneratorTest extends TestCase
             ->willReturn('abc123'); // Replace with a sample generated string
 
         // Instantiate RandomArrayGenerator with mocked RandomStringGenerator
-        $generator = new RandomArrayGenerator(3, 6, $mockRandomStringGenerator);
+        $generator = new RandomArrayGenerator(3, 6);
 
         // Generate the array
         $randomArray = $generator->generate();
