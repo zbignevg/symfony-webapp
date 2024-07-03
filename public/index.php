@@ -52,9 +52,10 @@ foreach ($generatorsCollection->getGenerators() as $generator) {
     $converter = $converters[array_rand($converters)];
     if (is_array($generated)) {
         foreach ($generated as $string) {
-            echo $converter->convert($string) . "\n";
+            $converted = $converter->convert($string);
+            echo "Original value: \"$string\" and converted: $converted<br/>";
         }
     } else {
-        echo $converter->convert($generated) . "\n";
+        echo $converter->convert($generated) . "<br/>";
     }
 }

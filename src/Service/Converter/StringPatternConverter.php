@@ -7,11 +7,15 @@ class StringPatternConverter
     public function convert(string $input): string
     {
         $result = [];
-        foreach (str_split($input) as $char) {
-            if (ctype_digit($char)) {
-                $result[] = $char;
-            } else {
-                $result[] = ord($char) - ord('a') + 1;
+
+        if (!empty($input)) {
+            foreach (str_split($input) as $char) {
+                if (ctype_digit($char)) {
+                    $result[] = $char;
+                } else {
+                    $lowerChar = strtolower($char);
+                    $result[] = ord($lowerChar) - ord('a') + 1;
+                }
             }
         }
 
