@@ -1,17 +1,17 @@
 
 
 Code Coverage Report:     
-  2024-07-03 23:08:13     
+  2024-07-04 14:59:08     
                           
  Summary:                 
   Classes: 100.00% (5/5)  
-  Methods: 100.00% (8/8)  
-  Lines:   100.00% (25/25)
+  Methods: 100.00% (10/10)
+  Lines:   100.00% (27/27)
 
 App\Service\Converter\Rot13Converter
-  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  2/  2)
 App\Service\Converter\StringPatternConverter
-  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  8/  8)
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  9/  9)
 App\Service\Generator\RandomArrayGenerator
   Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  7/  7)
 App\Service\Generator\RandomStringGenerator

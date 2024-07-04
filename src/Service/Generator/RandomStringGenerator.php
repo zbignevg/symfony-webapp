@@ -2,7 +2,7 @@
 
 namespace App\Service\Generator;
 
-class RandomStringGenerator
+class RandomStringGenerator implements GeneratorInterface
 {
     private int $length;
 

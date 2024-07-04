@@ -2,7 +2,7 @@
 
 namespace App\Service\Generator;
 
-class RandomArrayGenerator
+class RandomArrayGenerator implements GeneratorInterface
 {
     private int $arraySize;
     private int $stringLength;

@@ -50,4 +50,14 @@ class Rot13ConverterTest extends TestCase
 
         $this->assertEquals($expectedOutput, $output);
     }
+
+    public function testGetName()
+    {
+        $converter = new Rot13Converter();
+        $expectedName = 'ROT13';
+
+        $name = $converter->getName();
+
+        $this->assertEquals($expectedName, $name);
+    }
 }

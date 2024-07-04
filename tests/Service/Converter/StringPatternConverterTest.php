@@ -54,4 +54,14 @@ class StringPatternConverterTest extends TestCase
 
         $this->assertEquals($expectedOutput, $output);
     }
+
+    public function testGetName()
+    {
+        $converter = new StringPatternConverter();
+        $expectedName = 'String pattern';
+
+        $name = $converter->getName();
+
+        $this->assertEquals($expectedName, $name);
+    }
 }

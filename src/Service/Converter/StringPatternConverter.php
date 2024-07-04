@@ -2,8 +2,15 @@
 
 namespace App\Service\Converter;
 
-class StringPatternConverter
+class StringPatternConverter implements ConverterInterface
 {
+    private string $name = 'String pattern';
+
+    public function getName(): string
+    {
+        return $this->name;
+    }
+
     public function convert(string $input): string
     {
         $result = [];
